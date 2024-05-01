@@ -224,8 +224,8 @@ bootstrap_urls=("mirror.f4st.host" \
 echo "Downloading Arch Linux bootstrap"
 
 for link in "${bootstrap_urls[@]}"; do
-	curl -#LO "https://${link}/archlinux/iso/latest/archlinux-bootstrap-x86_64.tar.gz"
-	curl -#LO "https://${link}/archlinux/iso/latest/sha256sums.txt"
+	curl -#LO "https://${link}/archlinux/iso/2024.04.01/archlinux-bootstrap-x86_64.tar.gz"
+	curl -#LO "https://${link}/archlinux/iso/2024.04.01/sha256sums.txt"
 
 	if [ -s sha256sums.txt ]; then
 		grep bootstrap-x86_64 sha256sums.txt > sha256.txt
