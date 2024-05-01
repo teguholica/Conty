@@ -23,7 +23,7 @@ devel_pkgs="base-devel git meson mingw-w64-gcc cmake"
 # Apart from packages from the official Arch repos, you can also specify
 # packages from the Chaotic-AUR repo
 export packagelist="${audio_pkgs} ${video_pkgs} ${devel_pkgs} \
-	nano xorg-xwayland weston waydroid"
+	nano android-tools scrcpy"
 
 # If you want to install AUR packages, specify them in this variable
 export aur_packagelist=""
